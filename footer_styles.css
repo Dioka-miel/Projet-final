@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: 10px;
+  border-top: 2px solid black;
+  width: 100%;
+  position: static;
+  bottom: 0px;
+  left: 0px;
+  height: 10vh;
+}
+
+.div_haut_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px 10px;
+  font-weight: 300;
+  font-size: xx-large;
+}
+
+.div_bas_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 10px;
+  font-weight: 800;
+  font-size: xx-large;
+  align-items: center;
+  height: 8vh;
+}
+
+.list_reseaux_footer,
+.list_contact_footer{
+  list-style: none;
+}
+
+.lien_instagram_footer,
+.lien_facebook_footer,
+.lien_tiktok_footer,
+.lien_mentions_legals {
+  text-decoration: none;
+  color: black;
+}

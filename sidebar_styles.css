@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.side_bar {
+  gap: 30px;
+  top: 0px;
+  left: 0px;
+  margin: 10px;
+}
+
+.scroll {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 4px;
+  height: 100vh;
+  left: 35px;
+  position: absolute;
+  z-index: -999;
+}
+
+.etoile_haut {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.etoile_bas {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

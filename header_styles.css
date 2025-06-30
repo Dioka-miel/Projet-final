@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 10px;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: x-large;
+}
+
+.titre_nav{
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+  font-weight: 800;
+}
+
+.lien_evenement_nav,
+.lien_membres_nav {
+  border: 2px solid black;
+  background-color: black;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.logo_nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.reseaux_nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  gap: 10px;
+}

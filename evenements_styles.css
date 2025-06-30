@@ -1,0 +1,115 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 5vw;
+    padding: 10px;
+    gap: 2vw;
+}
+
+.card_present{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 3vh;
+    gap: 3vw;
+    margin-bottom: 5vh;
+}
+
+.img_present,
+.img_passe{
+    border-radius: 10px;
+}
+
+.container_info_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container_info_top{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.container_lien_bottom{
+    display: flex;
+    gap: 3vw;
+
+}
+
+.lien_facebook_main,
+.lien_concours_main{
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    font-size: 3vw;
+    display: inline-block;
+}
+
+.container_info_between{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    font-size: xx-large;
+}
+
+.container_titre{
+    font-size: xxx-large;
+}
+
+.titre_evenement{
+    font-weight: bolder;
+}
+
+.lieu,
+.date{
+    font-weight: lighter;
+}
+
+.titre_present,
+.titre_passe{
+    font-size: 5vw;
+    text-decoration-line: underline;
+}
+
+.card_passe{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px;
+}
+
+.container_passe_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.lien_passe{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: xx-large;
+}
