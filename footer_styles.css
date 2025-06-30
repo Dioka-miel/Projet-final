@@ -1,3 +1,4 @@
+
 * {
   padding: 0px;
   margin: 0px;
@@ -9,8 +10,6 @@ footer {
   border-top: 2px solid black;
   width: 100%;
   position: static;
-  bottom: 0px;
-  left: 0px;
   height: 10vh;
 }
 
@@ -46,3 +45,77 @@ footer {
   text-decoration: none;
   color: black;
 }
+
+.container_left,
+.container_right{
+  margin: 15px;
+}
+
+.logo_createurs_footer,
+.logo_cosplay_footer{
+  height: 120px;
+  box-sizing: border-box;
+  margin-top: 40px;
+
+}
+
+.logo_general_footer{
+  height: 130px;
+  box-sizing: border-box;
+  margin-top: 30px; 
+}
+
+/* 
+////////////
+////////////
+MEDIA QUERES
+////////////
+////////////
+ */
+
+@media only screen and (max-width: 768px){
+    .logo_createurs_footer,
+    .logo_cosplay_footer,
+    .logo_general_footer{
+      display:none;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    html{
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+    .logo_createurs_footer,
+    .logo_cosplay_footer,
+    .logo_general_footer{
+      height: 250px;
+      box-sizing: border-box;
+    } 
+
+    .logo_createurs_footer,
+    .logo_cosplay_footer{
+      height: 250px;
+      box-sizing: border-box;
+    }
+
+    .list_contact_footer,
+    .list_reseaux_footer{
+      font-size: 4vh;
+    }
+
+    .lien_mentions_legals,
+    .annee{
+      font-size: 3vh;
+    }
+
+    footer{
+      border-top: 4px solid black;
+      margin-top: 20px;
+    }
+
+}
+

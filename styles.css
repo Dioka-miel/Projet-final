@@ -1,22 +1,33 @@
+html{
+  scroll-behavior: smooth;
+  width: fit-content;
+}
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1vw 5vw;
-  padding:10px;
+  width: 90%;
+  margin: 10px;
 }
 
 .article_top_main,
 .article_bottom_main{
   border: 2px solid black;
   border-radius: 10px;
-  padding: 10px 17vw 10px 3vw;
+  padding:10px;
   margin: 10px;
   font-size: xx-large;
 }
@@ -24,12 +35,14 @@ main{
 .container_img_between{
   display: flex;
   gap: 10vw;
+  justify-content: center;
   margin: 3vw;
 }
 
 .titre_top_main,
 .titre_bottom_main{
   text-decoration-line: underline;
+  padding: 5px 17vw 5px 3vw;
 }
 
 .lien_bottom_main{
@@ -43,11 +56,92 @@ main{
   display: inline-block;
   font-size: xx-large;
   font-weight: 800;
-  width: 15vw;
   text-align: center;
 }
+
+
+.img_bilan{
+    border-radius: 10px;
+  }
 
 .paragraphe_top_main,
 .paragraphe_bottom_main{
   margin: 10px 0px;
+  padding: 5px 17vw 5px 3vw;
+}
+
+.container_lien{
+  margin-left: 10px;
+}
+
+/* 
+////////////
+////////////
+MEDIA QUERES
+////////////
+////////////
+ */
+
+
+@media only screen and (max-width: 768px){
+    .container_img_between{
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+    .container_lien{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .img_bilan{
+      width: 80vw;
+      border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    html{
+        width: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1600px){
+  .paragraphe_bottom_main,
+  .paragraphe_top_main{
+    font-size: 3vw;
+  }
+
+  .container_img_between{
+    gap: 5vw;
+  }
+
+  .container_lien{
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .lien_bottom_main{
+    font-size: 5vw;
+    border-radius: 15px;
+  }
+
+  .img_bilan{
+    width: 43vw;
+    border-radius: 30px;
+  }
+
+  .titre_top_main,
+  .titre_bottom_main{
+    font-size: 4vw;
+  }
+  .article_bottom_main,
+  .article_top_main{
+    border: 4px solid black;
+    border-radius: 20px;
+  }
+
+
 }

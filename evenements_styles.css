@@ -1,30 +1,47 @@
+html{
+  scroll-behavior: smooth;
+  width: fit-content;
+}
+
 *{
 padding: 0px;
 margin: 0px;
 box-sizing: border-box;
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main{
     display: flex;
     flex-direction: column;
-    margin: 1vw 5vw;
-    padding: 10px;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
     gap: 2vw;
 }
+
 
 .card_present{
     border: 2px solid black;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    padding: 3vh;
-    gap: 3vw;
+    padding: 1vh;
+    gap: 1vw;
     margin-bottom: 5vh;
 }
 
 .img_present,
 .img_passe{
     border-radius: 10px;
+}
+
+.img_passe{
+    width: 45vw;
 }
 
 .container_info_right{
@@ -84,12 +101,16 @@ main{
 
 .card_passe{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 10px;
     border: 2px solid black;
     width: 100%;
     padding: 10px;
+    align-items: center;
+    gap: 2vh;
+
 }
+
 
 .container_passe_bottom{
     width: 100%;
@@ -102,6 +123,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: 3vw;
+
 }
 
 .lien_passe{
@@ -112,4 +134,112 @@ main{
     border-radius: 10px;
     padding: 10px;
     font-size: xx-large;
+}
+
+.container_info_right{
+    gap: 2vw;
+}
+
+/* 
+////////////
+////////////
+MEDIA QUERES
+////////////
+////////////
+ */
+
+
+
+@media only screen and (max-width: 768px){
+    .cards{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img_present{
+        width: 55vw;
+        border-radius: 20px;
+        height: 57vh;
+    }
+
+
+    .titre_evenement{
+        font-size: 7vw;
+    }
+
+    .lien_passe{
+        font-size: 10vw;
+    }
+
+    .titre_passe,
+    .titre_present{
+        font-size: 9vw;
+    }
+
+    .lien_concours_main,
+    .lien_facebook_main{
+        font-size: 5vw;
+    }
+
+    .card_present,
+    .card_passe{
+        border: 2px solid black;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .img_passe,
+    .img_present{
+        width: 100%;
+        height: 68vh;
+    }
+
+    .container_info_right{
+        align-items: center;
+    }
+
+    .container_info_between{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    html{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+
+    .card_present{
+        width: 100%;
+    }
+
+    .img_present{
+        width: 50vw;
+    }
+
+    .titre_evenement{
+        font-size: 5vw;
+    }
+
+    .container_info_between{
+        font-size: 3vw;
+    }
+
+    .lien_concours_main,
+    .lien_facebook_main{
+        font-size: 6vh;
+    }
+
+    .container_info_right{
+        width: 100%;
+    }
+
+    .lien_passe{
+        font-size: 4vw;
+    }
+
+
 }

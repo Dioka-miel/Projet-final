@@ -11,7 +11,6 @@ header {
 
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -19,15 +18,15 @@ nav {
   font-size: x-large;
 }
 
-.titre_nav{
+.container_titre_nav{
   display: flex;
   justify-content: center;
   font-size: xxx-large;
   font-weight: 800;
 }
 
-.lien_evenement_nav,
-.lien_membres_nav {
+.lien_left_nav,
+.lien_right_nav {
   border: 2px solid black;
   background-color: black;
   color: whitesmoke;
@@ -50,3 +49,69 @@ nav {
   margin: 10px;
   gap: 10px;
 }
+
+/* 
+////////////
+////////////
+MEDIA QUERES
+////////////
+////////////
+ */
+
+
+@media only screen and (max-width: 768px){
+    .container_img_between{
+        flex-direction: column;
+        width: 90%;
+    }
+    .reseaux_nav{
+      justify-content: center;
+      gap: 40vw;
+    }
+
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+     nav{
+      gap: 40vw;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    html{
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1600px){
+    .lien_left_nav,
+    .lien_right_nav{
+      font-size: 5vh;
+      border-radius: 10px;
+    }
+
+    .img_logo_nav{
+      width: 50vw;
+    }
+
+    .img_lien_nav{
+      width: 10vw;
+    }
+
+    .titre_nav{
+      font-size: 15vw;
+    }
+
+    
+    header{
+      border-bottom: 4px solid black;
+      margin-bottom: 20px;
+    }
+
+}
+
