@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ribeye+Marrow&display=swap');
+
 html{
   scroll-behavior: smooth;
   width: fit-content;
 }
 
 *{
-padding: 0px;
-margin: 0px;
-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+
 }
 
 body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color:#fdedd3 ;
 }
 
 main{
@@ -22,22 +27,24 @@ main{
     width: 90%;
     padding: 10px 0px;
     gap: 2vw;
+    color:#352a24;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 1vw;
 }
 
 .card{
-    border: 2px solid black;
+    border: 2px solid #352a24;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     padding: 10px;
     margin: 10px;
     width: 100%;
+    align-items: center;
 }
 
 .div_right{
@@ -46,10 +53,12 @@ main{
     width: 22vw;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
 }
 
 .titre_card{
-    font-size: xxx-large;
+    font-size: 4vw;
 }
 
 .sous_titre_card{
@@ -58,19 +67,53 @@ main{
 
 }
 
-.list_reseaux_card{
-    
+.lien_reseaux_card{
     list-style: none;
+    color:#fdedd3
 }
 
-.lien_reseaux_card{
-    color: black;
-    text-decoration: none;
+.list_reseaux_card{
     font-size: x-large;
+    border: 2px solid #352a24;
+    background-color: #352a24;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
 }
 
 .img_card{
     border-radius: 15px;
+    width: 300px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+}
+
+
+/* 
+////////////
+////////////
+Transition/ Annimation
+////////////
+////////////
+*/
+
+.card:hover{
+    .img_card{
+        filter: grayscale(0%);
+    }
+    box-shadow: 0px 0px 10px 5px rgb(104, 104, 255);
+}
+
+.list_reseaux_card:hover{
+    zoom:110%;
+    box-shadow: 0px 3px 10px 3px #352a24;
+    border: #fdedd3;
+    background-color: #fdedd3;
+
+    .lien_reseaux_card{
+        color:#352a24;
+
+    }
 }
 
 /* 
@@ -92,9 +135,19 @@ MEDIA QUERES
         height: 60vw;
     }
 
+    
     .img_card{
-        width: 47vw;
+        width: 43vw;
     }
+
+    .titre_card{
+        font-size: 8vw;
+    }
+
+    #diokamiel_img{
+        width: 38vw;
+    }
+
 }
 
 @media only screen and (min-width: 1200px){
@@ -107,8 +160,8 @@ MEDIA QUERES
 @media only screen and (min-width: 1600px){
 
     .card{
-        width: 100%;
-        height: 100%;
+        width: 46vw;
+        height: 52vh;
         border: 4px solid black;
         gap: 2vw;
     }
@@ -126,7 +179,7 @@ MEDIA QUERES
     }
 
     .titre_card{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .sous_titre_card{
@@ -134,6 +187,10 @@ MEDIA QUERES
     }
 
     .img_card{
+        width: 22vw;
+    }
+
+    #diokamiel_img{
         width: 20vw;
     }
 
